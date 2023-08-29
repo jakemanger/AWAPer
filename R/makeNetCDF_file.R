@@ -179,7 +179,7 @@ makeNetCDF_file <- function(
       if (is.na(urlPrecip)) {
         # Get the grid geometry of the non solar data
         message('... Getting grid gemoetry from file.')
-        headerData <- AWAPer::get.ASCII.file.header('tmax', workingFolder, filedate_str, remove.file=F)
+        headerData <- AWAPer::get.ASCII.file.header('tmax.', workingFolder, filedate_str, remove.file=F)
         nCols  <- headerData$nCols
         nRows  <- headerData$nRows
         SWLong <- headerData$SWLong
@@ -201,7 +201,7 @@ makeNetCDF_file <- function(
       if (is.na(urlPrecip)) {
         # Get the grid geometry of the non solar data
         message('... Getting grid gemoetry from file.')
-        headerData <- AWAPer::get.ASCII.file.header('vprp', workingFolder, filedate_str, remove.file=F)
+        headerData <- AWAPer::get.ASCII.file.header('vprp.', workingFolder, filedate_str, remove.file=F)
         nCols  <- headerData$nCols
         nRows  <- headerData$nRows
         SWLong <- headerData$SWLong

@@ -3,7 +3,7 @@
 #' This is an internal function. It downloads an ARCMAP ASCII grid file from a URL.
 #'
 #' @return
-#' A list variable of the file name and succes/failure flag.
+#' A list variable of the file name and success/failure flag.
 #'
 #' @keywords internal
 #'
@@ -38,7 +38,7 @@ download.ASCII.file <- function (url.string, data.type.label,  workingFolder, da
     )
     if (length(didFail) == 0) {didFail <- 0}
     if (didFail == 0) {
-      
+
       displayErrorMessage <- function() {
         message('------------------------------------------------------------------------------------')
         message('If the below error is not obvious, it may be that the program "7z" is either not installed')
